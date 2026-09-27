@@ -18,6 +18,7 @@ const Native = VencordNative.pluginHelpers["Quest Auto Completer"] as PluginNati
 
 const STYLE_ID = "qc-styles";
 const ROOT_ID = "qc-root";
+const VERSION = "4.0.1";
 
 const settings = definePluginSettings({
     // ── Automation ──────────────────────────────────────────────────────────
@@ -1109,6 +1110,7 @@ function buildSettingsPanel(): HTMLDivElement {
     run.onclick = () => { overlay.classList.remove("qc-in"); setTimeout(() => overlay.remove(), 200); runEngine(getButton()); };
     foot.append(el("div", { className: "qc-foot-note", textContent: "A Sail Solutions App ✦" }), run);
     panel.append(foot);
+    panel.append(el("div", { className: "qc-settings-version", textContent: `Quest Completer V${VERSION}` }));
 
     overlay.append(panel);
     return overlay;
@@ -1361,6 +1363,7 @@ function injectCss() {
 .qc-switch.on .qc-knob { transform: translateX(20px); }
 .qc-settings-foot { display:flex; align-items:center; justify-content:space-between; margin-top:18px; }
 .qc-foot-note { font-size:11.5px; color:${T.dim}; }
+.qc-settings-version { align-self:center; margin-top:8px; font-size:11px; color:${T.dim}; }
 
 /* settings body scroll + sections */
 .qc-settings { display:flex; flex-direction:column; max-height: min(80vh, 720px); }
