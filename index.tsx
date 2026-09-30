@@ -18,7 +18,7 @@ const Native = VencordNative.pluginHelpers["Quest Auto Completer"] as PluginNati
 
 const STYLE_ID = "qc-styles";
 const ROOT_ID = "qc-root";
-const VERSION = "4.0.1";
+const VERSION = "4.0.2";
 
 const settings = definePluginSettings({
     // ── Automation ──────────────────────────────────────────────────────────
