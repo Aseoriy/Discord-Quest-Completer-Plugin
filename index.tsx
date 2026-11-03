@@ -18,7 +18,7 @@ const Native = VencordNative.pluginHelpers["Quest Auto Completer"] as PluginNati
 
 const STYLE_ID = "qc-styles";
 const ROOT_ID = "qc-root";
-const VERSION = "4.0.2";
+const VERSION = "4.0.3";
 
 const settings = definePluginSettings({
     // ── Automation ──────────────────────────────────────────────────────────
@@ -634,6 +634,7 @@ async function runEngine(button?: HTMLButtonElement) {
             ensureSameAccount(accountId);
             if (!activityAuthorization.ok) {
                 const status = activityAuthorization.status || "network error";
+                log(`Activity authorization failed (${status})`, activityAuthorization.body);
                 throw new AchievementCompletionError(`the activity authorization failed (${status})`);
             }
 
@@ -656,6 +657,7 @@ async function runEngine(button?: HTMLButtonElement) {
             ensureSameAccount(accountId);
             if (!progressResponse.ok) {
                 const status = progressResponse.status || "network error";
+                log(`Activity progress report failed (${status}) for app ${applicationId}`, progressResponse.body);
                 throw new AchievementCompletionError(`the activity rejected the achievement (${status})`);
             }
 

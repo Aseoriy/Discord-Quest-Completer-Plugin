@@ -123,6 +123,6 @@ export async function reportActivityAchievement(
             "X-Discord-Quest-ID": request.questId,
             Referer: request.referrer
         },
-        { progress: request.target }
+        { quest_id: request.questId, progress: request.target }
     );
 }
