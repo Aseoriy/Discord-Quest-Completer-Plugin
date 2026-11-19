@@ -3,7 +3,7 @@ a plugin i made for vencord (and betterdiscord now) to complete quests without h
 
 <img width="1398" height="807" alt="Discord_BndTLLdq9k" src="https://github.com/user-attachments/assets/cb0ae4fe-874b-43ad-bb54-97e7a048f2de" />
 
-## Tutorial for what to do *on vencord*: [Vencord tuto](https://drive.google.com/drive/u/0/folders/1AURw0PB9ABt14Ph5DIP3RN8GpdVESL3Q)
+## Tutorial for what to do *on vencord*: [Vencord tuto](https://drive.proton.me/urls/Q2529P2CX8#2QHsBLTcNH3s)
 ## Tutorial for what to do *on betterdiscord*: [BetterDiscord tuto](https://docs.betterdiscord.app/users/guides/installing-addons)
 
 
